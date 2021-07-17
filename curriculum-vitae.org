@@ -60,8 +60,8 @@
 #+LATEX_HEADER: \usepackage[style=trad-abbrv,sorting=none,sortcites=true,doi=false,url=false,giveninits=true,hyperref]{biblatex}
 
 ** Exporter Settings
-#+AUTHOR: Aidan Scannell
-#+EXPORT_FILE_NAME: ./curriculum-vitae.pdf
+#+AUTHOR: Joseph Pfeifer
+#+EXPORT_FILE_NAME: ./lebenslauf-pfeifer.pdf
 #+OPTIONS: toc:nil title:nil H:1
 ** Macros
 #+MACRO: cvevent \cvevent{$1}{$2}{$3}{$4}
@@ -73,22 +73,22 @@
 * CV Header :ignore:
 ** Photo & Tagline :ignore:
 #+begin_export latex
-\name{Aidan Scannell}
-\photoR{2.8cm}{aidan_portrait.jpeg}
-\tagline{PhD Researcher}
+\name{Joseph Pfeifer}
+\photoR{2.8cm}{joseph_portrait.jpeg}
+\tagline{Software Entwickler}
 #+end_export
 
 ** Personal Info :ignore:
 #+begin_export latex
 \personalinfo{
-  \homepage{www.aidanscannell.com}
-  \email{scannell.aidan@gmail.com}
-  \phone{+44 787 558 3912}
-  \location{Bristol, UK}
-  \github{aidanscannell}
-  \linkedin{aidan-scannell-82522789/}
-  \dob{22 April 1994}
-  \driving{UK Driving Licence}
+  \homepage{}
+  \email{joseph.p.pfeifer@gmail.com}
+  \phone{+43 6763800492}
+  \location{Krobotek AT}
+  \github{jbpfeifer}
+  \linkedin{joseph-pfeifer/}
+  \dob{21 Juni 1980}
+  \driving{A, B}
 }
 \makecvheader
 #+end_export
@@ -186,7 +186,7 @@ Alongside my PhD I have assisted teaching:
 ** Newpage :ignore:
 {{{new-page}}}
 
-** Projects (Cont.)
+** Projects (Cont.) :noexport:
 *** Traj Opt :ignore:
 # {{{divider}}}
 
@@ -255,7 +255,7 @@ Alongside my PhD I have assisted teaching:
 ** Newpage :ignore:noexport:
 {{{new-page}}}
 
-** Volunteering
+** Volunteering :noexport:
 *** FARSCOPE Course Rep :ignore:
 {{{cvevent(Cohort Representative, FARSCOPE CDT, Sept 2018 - Ongoing, Bristol\, UK)}}}
 # - I represent myself and fellow CDT students in management meetings where I communicate ideas and information between students and management.
@@ -311,7 +311,7 @@ Each year, as part of Formula Student, students design, build and race a single 
 {{{cvtag(Leadership)}}}
 {{{cvtag(Time Management)}}}
 
-** Invited Talks
+** Invited Talks :noexport:
 *** Geometry Talk :ignore:
 {{{cvevent(Synergising Bayesian Inference and Probabilistic Geometries for Robotic Control, Cognitive Systems - Technical University of Denmark (DTU), 18 March 2021, Zoom)}}}
 # - Presented a method for controlling multimodal dynamical systems synergising Bayesian inference and probabilistic geometries.
