@@ -3,7 +3,7 @@
 #+BEGIN_SRC emacs-lisp :exports none  :results none :eval always
 (setq org-latex-logfiles-extensions (quote ("lof" "lot" "tex~" "aux" "idx" "log" "out" "toc" "nav" "snm" "vrb" "dvi" "fdb_latexmk" "blg" "brf" "fls" "entoc" "ps" "spl" "bbl" "xmpi" "run.xml" "bcf")))
 (add-to-list 'org-latex-classes
-             '("altacv" "\\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+             '("altacv" "\\documentclass[9pt,a4paper,ragged2e,withhyper]{altacv}
 
 % Change the page layout if you need to
 \\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
@@ -74,14 +74,13 @@
 ** Photo & Tagline :ignore:
 #+begin_export latex
 \name{Joseph Pfeifer}
-\photoR{2.8cm}{joseph_portrait.jpeg}
+\photoR{2.8cm}{joseph_portrait2.jpeg}
 \tagline{Software Entwickler}
 #+end_export
 
 ** Personal Info :ignore:
 #+begin_export latex
 \personalinfo{
-  \homepage{}
   \email{joseph.p.pfeifer@gmail.com}
   \phone{+43 6763800492}
   \location{Krobotek AT}
@@ -96,71 +95,90 @@
 * CV Column 1 :ignore:
 #+begin_export latex
 \begin{paracol}{2}
+\let\footnotelayout\relax}
 #+end_export
-** Personal Statement :ignore:
+** Personal Statement :ignore: 
 #+begin_export latex
  \begin{quote}
- ``Ich beschäftige mich gerne mit neuen Technologien in der IT und setze gerne Ideen um. Wenn ein Problem besteht arbeite ich vebissen daran''
+ ``Ich beschäftige mich gerne mit neuen Technologien in der IT und setze gerne Ideen um.''
  \end{quote}
 #+end_export
 ** Erfahrung
 *** Senior Fullstack Developer                                       :ignore:
 {{{cvevent(Senior Fullstack Developer, markta GmbH,Juni 2020 -- , Wien\, AT)}}}
-
-# Researching methods for probabilistic inference and control in multimodal dynamical systems. EPSRC Centre for Doctoral Training in Future Autonomous and Robotic Systems (FARSCOPE).
-Entwicklung und Adaption von Odoo Modulen um die Geschätsprozesse marktas in Odoo abzubilden
- - Vue Storefront Modul
- - Klarna Modul
- - Mailchimp Modul
- - Anbindung an ein prorietäres Lagerverwatungssystem unseres Fullfilment Providers
- - Rest Modul
-
-Entwicklung und Implementierung von Vue Storefront
-
-Entwicklung aber v.a Security Updates des Mageto 2 Stores
-
-{{{cvtag(odoo)}}}
-{{{cvtag(REST)}}}
+Entwicklung und Adaption von Odoo Modulen um die Geschäftsprozesse marktas in Odoo abzubilden.
+# - Vue Storefront Modul
+# - Klarna Modul
+# - Mailchimp Modul
+# - Anbindung an ein prorietäres Lagerverwatungssystem unseres Fullfilment Providers
+# - Rest Modul
+{{{par-div}}}
 
 *** Fullstack Developer                                              :ignore:
+{{{cvevent(Fullstack Developer,, Februar 2019 -- Juni 2020, )}}}
+Anbindung von Odoo an Magento, Weiterentwicklung der Magento Seite und Aufbau eines Fullfillment Centers
 {{{par-div}}}
-{{{cvevent(Fullstack Developer, markta GmbH,Februar 2019 -- Juni 2020, Wien\, AT)}}}
-
-- Odoo
-- Magento 2
-- Aufbau eines Fullfilment Centers  
-
-{{{cvtag(Communication)}}}
-{{{cvtag(Active listening)}}}
-{{{cvtag(Teaching)}}}
 
 *** Sys Admin und Magento 2 Developer                                :ignore:
+{{{cvevent(Magento2 Developer,, Februar 2018 -- Februar 2019,, AT)}}}
+Weiterentwilckung der Magento Seite (Abholstellen, PayPal) und Bugsfixing
+
+{{{cvtag(Odoo)}}}
+{{{cvtag(Magento2)}}}
+{{{cvtag(Vue)}}}
+{{{cvtag(Vue Storefront)}}}
+{{{cvtag(Docker)}}}
 {{{par-div}}}
-{{{cvevent(Magento2 Developer, markta GmbH, Februar 2018 -- Februar 2019, Wien\, AT)}}}
 
-# I worked as a mechanical engineer within the building services division where I developed my
-# teamwork skills and learned the importance of knowledge management.
-# I was in charge of optimising the heating, ventilation and air-conditioning of a building a
-# Hackney Wick underground station.
-# I met with external architects to communicate our ideas and I personally overcame logistical issues
-# and improved a systems efficiency, resulting in the designs approval.
-# I consistently met deadlines whilst working under pressure and was offered future employment.
-# This internship strengthened my desire to move away from engineering and pursue a research driven
-# career involving mathematics and programming.
+*** Selbstständig                                                    :ignore:
+{{{cvevent(Software Entwickler, Selbstständig, Februar 2016 -- Februar 2018, Krobotek\, AT)}}}
+ - LokaleSachen
+{{{cvtag(meteor)}}}
+{{{cvtag(android)}}}
+{{{cvtag(webapp)}}}
+{{{cvtag(mongodb)}}}
+#+begin_export latex
+\bigskip
+#+end_export
 
-- Developed teamwork skills, learning the importance of knowledge management within a team.
-- Overcame logistical issues and improved a system’s efficiency, resulting in the design’s approval.
-- Consistently met deadlines whilst working under pressure.
-  
-{{{cvtag(Engineering)}}}
-{{{cvtag(Teamwork)}}}
-{{{cvtag(Industry)}}}
+ - MyPostCard
+{{{cvtag(Django)}}}
+{{{cvtag(PHP)}}}
+{{{cvtag(Python)}}}
+{{{cvtag(Javascript)}}}
+{{{cvtag(Vue)}}}
+#+begin_export latex
+\bigskip
+#+end_export
+ - Verwaltungssoftware für Therapeuten
+{{{cvtag(meteor)}}}
+{{{cvtag(odoo)}}}
+#+begin_export latex
+\bigskip
+#+end_export
+ - Kundenprojekte
+   - NativeSpeaker
+   - Wordpress Seiten
+   - statische Seiten
 
-*** CEO Lokale Sachen                                                :ignore:
+{{{cvtag(meteor)}}}
+{{{cvtag(wordpress)}}}
+{{{cvtag(node)}}}
 {{{par-div}}}
-{{{cvevent(CEO Lokale Sachen, mw, Juni -Juli 2019, Krobotek\, AT)}}}
- - Alles da
 
+*** Lehramt                                                          :ignore:
+{{{cvevent(Lehrer an einer NMS, Stadt Wien, September 2012 -- Februar 2016, Wien\, AT)}}}
+ - Zusätzlich zum Unterricht Betreung der IT in der Schule
+{{{par-div}}}
+*** Selbstständig während Studiums                                   :ignore:
+{{{cvevent(Selbstständig während des Studiums,, September 2005 -- September 2012, Wien, Baden\, AT)}}}
+ - Musiker
+ - Websiten programmieren
+ - Segellehrer
+{{{par-div}}}
+*** Zivildienst                                                      :ignore:
+{{{cvevent(Zivildienst als Rettungsanitäter, RK Oberösterreich, Juni 2001 -- Juni 2002, Grieskirchen\, AT)}}}
+{{{par-div}}}
 ** Projects :noexport:
 *** Active Learning :ignore:
 
@@ -246,48 +264,78 @@ Each year, as part of Formula Student, students design, build and race a single 
 
 ** Skills
 {{{cvtag(Python)}}}
-{{{cvtag(TensorFlow)}}}
 {{{cvtag(Odoo)}}}
+{{{cvtag(Django)}}}
 {{{cvtag(Jupyter)}}}
-{{{cvtag(NumPy)}}}
-{{{cvtag(SciPy)}}}
-{{{cvtag(Matplotlib)}}}
+{{{cvtag(TensorFlow)}}}
 
 {{{divider}}}
 
 {{{cvtag(PHP)}}}
 {{{cvtag(Magento2)}}}
-{{{cvtag(MATLAB)}}}
-{{{cvtag(ROS)}}}
+{{{cvtag(Wordpress)}}}
 
 {{{divider}}}
 
-{{{cvtag(Javascript)}}}
 {{{cvtag(node)}}}
 {{{cvtag(VUE)}}}
 {{{cvtag(Vue Storefront)}}}
-{{{cvtag(React Native)}}}
+{{{cvtag(React)}}}
+{{{cvtag(next.js)}}}
+{{{cvtag(Matplotlib)}}}
+{{{cvtag(meteor.js)}}}
 
 {{{divider}}}
 
-{{{cvtag(Git/GitHub)}}}
+{{{cvtag(Git)}}}
+{{{cvtag(Docker)}}}
+{{{cvtag(Vagrant)}}}
+
+{{{divider}}}
+
 {{{cvtag(HTML)}}}
 {{{cvtag(CSS)}}}
+{{{cvtag(javascript)}}}
+{{{cvtag(typescript)}}}
+{{{cvtag(Bash)}}}
+
+{{{divider}}}
+
+{{{cvtag(postgresql)}}}
+{{{cvtag(mysql)}}}
+{{{cvtag(mongodb)}}}
 
 ** Ausbildung
 
-{{{cvevent(Lehramt Mathematik und Sport, PH Niederösterreich, Sept 2010 - Juni 2013,)}}}
+{{{cvevent(Lehramt Mathematik und Sport, PH Niederösterreich, Sept 2009 - Juni 2012,)}}}
 
 {{{divider}}}
 
-{{{cvevent(Psychologie, Universität Wien, Aug 2002 - Sept 2008,)}}}
-
+#+BEGIN_EXPORT latex
+\cvevent{\footnote{ Nicht abgeschlossen. } Psychologie}{Universität Wien}{Sept 2002 -- Sept 2007}{}
+#+END_EXPORT
 {{{divider}}}
 
 {{{cvevent(Gymnasium, Ried im Innkreis, Sept 1990 -- Juni 1999,)}}}
 
-{{{divider}}}
-
+** persönliche Projekte
+ - Emacs 
+#+begin_export latex
+\bigskip
+#+end_export
+ - Blog auf Basis TinaCMS
+{{{cvtag(react)}}}
+{{{cvtag(next.js)}}}
+#+begin_export latex
+\bigskip
+#+end_export
+ - Financial Analysis mit Jupyter
+{{{cvtag(jupyter)}}}
+{{{cvtag(tensorflow)}}}
+#+begin_export latex
+\bigskip
+#+end_export
+ - Game Development     
 ** Newpage :ignore:
 #+BEGIN_EXPORT latex
 \newpage
@@ -334,7 +382,7 @@ Each year, as part of Formula Student, students design, build and race a single 
 
 {{{cvachievement(\faTrophy, The Duke of Edinburgh's Award, Bronze/Silver/Gold)}}}
 
-** Languages :ignore: 
+** Languages :ignore::noexport: 
 #+begin_export latex
 \cvsection{Sprachen}
 
